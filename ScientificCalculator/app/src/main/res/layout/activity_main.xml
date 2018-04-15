@@ -15,14 +15,12 @@
         android:text="Please put Values"
         android:textAppearance="?android:attr/textAppearanceMedium"/>
 
-    <TextView
+    <EditText
         android:id="@+id/txtResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="0.08"
-        android:gravity="right"
-        android:text="value"
-        android:textAppearance="?android:attr/textAppearanceLarge" />
+        android:text="Input your values"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
 
 
     <TableLayout
@@ -73,20 +71,21 @@
                 android:id="@+id/one"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtResult"
+                android:onClick="onClick"
                 android:text="@string/one" />
 
             <Button
                 android:id="@+id/two"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtResult"
+                android:onClick="onClick"
                 android:text="@string/two" />
 
             <Button
                 android:id="@+id/three"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="@string/three" />
 
             <Button
@@ -109,20 +108,21 @@
                 android:id="@+id/four"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtResult"
+                android:onClick="onClick"
                 android:text="@string/four" />
 
             <Button
                 android:id="@+id/five"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtResult"
+                android:onClick="onClick"
                 android:text="@string/five" />
 
             <Button
                 android:id="@+id/six"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="@string/six" />
 
             <Button
@@ -145,21 +145,21 @@
                 android:id="@+id/seven"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtResult"
+                android:onClick="onClick"
                 android:text="@string/seven" />
 
             <Button
                 android:id="@+id/eight"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtResult"
+                android:onClick="onClick"
                 android:text="@string/eight" />
 
             <Button
                 android:id="@+id/nine"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/txtResult"
+                android:onClick="onClick"
                 android:text="@string/nine" />
 
             <Button
@@ -176,7 +176,6 @@
     </TableLayout>
 
     <TableLayout
-        android:below="@id/normalTable"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -194,6 +193,7 @@
                 android:id="@+id/zero"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:onClick="onClick"
                 android:text="@string/zero"/>
 
             <Button
